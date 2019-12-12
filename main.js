@@ -42,23 +42,32 @@ else{
 
 const nap = (peoples) => {
   
-  return peoples.map( peoples.filter(function(people){
+
+  for (people of peoples){
     if (people.asleep ===false && people.localTime >= 100 && people.localTime <= 400){
-      return {
-        name,
-        localTime,
-        asleep : true
-      }
-    }
+          return {
+            name: name,
+            localTime : localTime,
+            asleep : true
+          }
+
   }
-))
-}
+  // return peoples.map(function(people){
+  //   if (people.asleep ===false && people.localTime >= 100 && people.localTime <= 400){
+  //     return {
+  //       asleep : true
+  //     }
+  //   }
+  // }
+// )
+}}
 
 
 
 
 const findIndices = (item, func) => {
-  const newArr = item.filter(func)
+  const newArr = item.filter(indexOf(func))
+
 
 }
 
@@ -68,8 +77,12 @@ const Faqtory = () => {
     length : 0,
   
   addQuestion : function(question){
-    this.questions[0].text.push(question)
+    this.questions.push(question)
     this.length ++
+  },
+
+  answerQuestion : function(){
+
   }
 }}
 
