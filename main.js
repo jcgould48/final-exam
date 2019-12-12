@@ -1,14 +1,21 @@
-const makeParagraph = () => {
-
+const makeParagraph = (sentence) => {
+return sentence.join(' ')
 }
 
-const averageDogAge = () => {
-
+const averageDogAge = (pets) => {
+  // pets.map
 }
 
-const addToDigits = () => {
-
-}
+const addToDigits = (num1,num2) => {
+  let strNum= num1.toString()
+  let arrNum= strNum.split('')
+  const newArr = [];
+  for (let i = 0; i< arrNum.length; i++){
+    newArr.push(Number(arrNum[i])+num2)
+  
+  }
+  return Number(newArr.join(''))
+  }
 
 const nightOwls = () => {
 
